@@ -9,10 +9,7 @@ namespace DesignPatternCsharp
 {
 	class Program
 	{
-		//inital 
 		private readonly static UnitAdapter _unit = new UnitAdapter();
-
-
 
 		static void Main(string[] args)
 		{
