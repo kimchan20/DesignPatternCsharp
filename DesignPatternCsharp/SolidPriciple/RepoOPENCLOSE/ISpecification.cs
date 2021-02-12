@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatternCsharp;
 
-namespace Test
+namespace DesignPatternCsharp
 {
-	class Program
+	public interface ISpecification<T>
 	{
-
-		void Main(string[] args)
-		{
-
-		}
+		bool isStatisfied(T t);
 	}
 }
