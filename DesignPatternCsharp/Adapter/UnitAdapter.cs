@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatternCsharp
 {
-	class UnitAdapter
+	public class UnitAdapter
 	{
 		public SingleResponsibility singleResponsibility { get;}
 
