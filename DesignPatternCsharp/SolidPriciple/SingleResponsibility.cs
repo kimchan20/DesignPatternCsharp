@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatternCsharp
 {
-	class SingleResponsibility
+	public class SingleResponsibility
 	{
 
 		private readonly Dictionary<int, string> entries = new Dictionary<int, string>();
