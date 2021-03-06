@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternCsharp", "DesignPatternCsharp\DesignPatternCsharp.csproj", "{D5AE1A10-E585-4E7A-8237-FC856C21190D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper", "Dapper\Dapper.csproj", "{988EC1BC-D53F-4EDF-83A4-2ABC3FC397DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D5AE1A10-E585-4E7A-8237-FC856C21190D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5AE1A10-E585-4E7A-8237-FC856C21190D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5AE1A10-E585-4E7A-8237-FC856C21190D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988EC1BC-D53F-4EDF-83A4-2ABC3FC397DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988EC1BC-D53F-4EDF-83A4-2ABC3FC397DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988EC1BC-D53F-4EDF-83A4-2ABC3FC397DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988EC1BC-D53F-4EDF-83A4-2ABC3FC397DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

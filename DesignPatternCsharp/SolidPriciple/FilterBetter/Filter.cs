@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace DesignPatternCsharp
 {
-	class Filter : IFilter<OpenCloseResponsibility.Product>
+	class filter2<T> : IFilter<T>
 	{
-		public IEnumerable<OpenCloseResponsibility.Product> BetterFilter(IEnumerable<OpenCloseResponsibility.Product> items, ISpecification<OpenCloseResponsibility.Product> category)
+		public IEnumerable<T> BetterFilter(IEnumerable<T> items, ISpecification<T> category)
 		{
 			foreach(var item in items)
-			{
 				if(category.isStatisfied(item))
 					yield return item;
-			}
 		}
 	}
 
