@@ -14,10 +14,9 @@ namespace DesignPatternCsharp
 		{
 
 		}
-		public static void Main(string [] args)
+		public static void Main(string[] args)
 		{
 			deck = new Deck();
-			var ss = deck.ShuffleDecks();
 		}
 	}
 }

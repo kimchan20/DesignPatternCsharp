@@ -10,17 +10,23 @@ namespace Dapper.Class
 {
 	class User : IUserRepository, ISearchRepository
 	{
-		List<UserModel> addList = new List<UserModel>();
+		private List<UserModel> addList = new List<UserModel>();
 
 		public void Add(object model)
 		{
 			addList.Add(model as UserModel);
 		}
 
+		public void Dispose()
+		{
+			if (this != null)
+				this.addList = null;
+		}
+
 		public IEnumerable<UserModel> Filter(object model, IFilterRepository filter)
 		{
-			foreach(var item in addList)
-				if(filter.isAge(item))
+			foreach (var item in addList)
+				if (filter.isAge(item))
 					yield return item;
 		}
 

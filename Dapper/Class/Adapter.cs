@@ -9,9 +9,9 @@ namespace Dapper.Class
 {
 	class Adapter : IAdapterRepository
 	{
-		public  IUserRepository user { get;}
+		public IUserRepository user { get; }
 
-		public ISearchRepository userRepo { get;}
+		public ISearchRepository userRepo { get; }
 
 		public Adapter()
 		{
@@ -21,7 +21,8 @@ namespace Dapper.Class
 
 		public void Dispose()
 		{
-			throw new NotImplementedException();
+			if (this != null)
+				GC.SuppressFinalize(this);
 		}
 
 		//public void Dispose()

@@ -10,11 +10,7 @@ namespace Dapper.Class.ActionClass
 {
 	class FilterUser : IFilterRepository
 	{
-		private readonly int _ageLimit;
-		public FilterUser(int ageLimit)
-		{
-			_ageLimit = ageLimit;
-		}
+		private const int _ageLimit = 18;
 		public bool isAge(object model)
 		{
 			var modelcon = model as UserModel;

@@ -41,10 +41,12 @@ namespace Dapper
 
 			//filter age
 			Console.WriteLine("\nUsers Filter : Adult");
-			foreach(var item in _unit.user.Filter(_unit.user.getUsers(), new FilterUser(18)))
+			foreach(var item in _unit.user.Filter(_unit.user.getUsers(), new FilterUser()))
 			{
-				Console.WriteLine(item.fname + " "  + item.lname + " - " +  item.age + " an Adult : "+ new FilterUser(18).isAge(item).ToString() );
+				Console.WriteLine(item.fname + " "  + item.lname );
 			}
+
 		}
 	}
 }
+//

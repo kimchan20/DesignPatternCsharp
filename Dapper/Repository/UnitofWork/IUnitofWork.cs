@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dapper.Repository
+namespace Dapper.Repository.UnitofWork
 {
-	interface IUserRepository : ISearchRepository
+	interface IUnitofWork<T> : IDisposable
 	{
-		void Add(object model);
-		void Dispose();
+		dynamic Insert(T model);
 	}
 }

@@ -28,6 +28,7 @@ namespace DesignPatternCsharp.Poker
 		public string[] deckCard = new string[size];
 		private readonly Suit suit;
 		private readonly Random random;
+		public List<String> shuffledDecks = new List<String>();
 		public Deck()
 		{
 			suit = new Suit();
@@ -40,7 +41,6 @@ namespace DesignPatternCsharp.Poker
 		}
 		public List<String> ShuffleDecks()
 		{
-			var shuffledDecks = new List<String>();
 			while (shuffledDecks.Count < 52)
 			{
 				var randSuit = random.Next(0, 3);
@@ -48,7 +48,7 @@ namespace DesignPatternCsharp.Poker
 
 				var selSuit = DrawDecks()[randSuit];
 				var selSuitDeck = selSuit[randSuitDeck];
-				if(shuffledDecks.Count() == 0)
+				if (shuffledDecks.Count() == 0)
 					shuffledDecks.Add(selSuitDeck);
 				else
 					shuffledDecks.Add(selSuitDeck);

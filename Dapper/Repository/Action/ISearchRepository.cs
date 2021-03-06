@@ -9,8 +9,6 @@ namespace Dapper.Repository
 {
 	interface ISearchRepository 
 	{
-
-
 		IEnumerable<UserModel> getUsers();
 
 		IEnumerable<UserModel> Filter(object model, IFilterRepository filter);
